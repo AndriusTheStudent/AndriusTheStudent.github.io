@@ -26,7 +26,41 @@
 											<h2>Nashville Housing Dataset</h2>
 										</header>									
                                                 <section>
-													<script src="https://gist.github.com/AndriusTheStudent/48655590ce935613785dfaae5ae960b8.js"></script>
+													<p>View All NashvilleHousing table records</p>
+													<script src="https://gist.github.com/AndriusTheStudent/8de27784775b5217dbcc0de5c2c64f39.js"></script>
+
+													<p>Convert SaleDate column from DateTime to Date data type as time does not serve any purpose in this dataset. Update current NashvilleHousing table SaleDate column records with new data type value.</p>
+													<script src="https://gist.github.com/AndriusTheStudent/385f38bb0f096673c065b7bfc9e93a26.js"></script>
+
+													<p>Alternative method to convert SaleDate column data type as SQL Server sometimes refuse to change data type. Add new column with converted values instead of updating existing column.</p>
+													<script src="https://gist.github.com/AndriusTheStudent/b557185c5eeca5c8f6782bbc5332ab32.js"></script>
+
+													<p>Self-Join to NashvilleHousing table to extract property address and replace NULL values in PropertyAddress column. After closer table data analysis, ParcelID can be referenced to extract missing address.</p>
+													<p>UniqueID column distinguish Property Address where address is ame fot two or more identical ParcelID's.</p>
+													<script src="https://gist.github.com/AndriusTheStudent/ddfdab5683799e5b791b7826024aa78c.js"></script>
+
+													<p>Update NashvilleHousing table PropertyAddress NULL values with extracted address via self-join</p>
+													<script src="https://gist.github.com/AndriusTheStudent/2e7e3bc8289826217529267410ec9319.js"></script>
+
+													<p>Use of SUBSTRING, CHARINDEX and LEN functions to divide PropertyAddress value into automic values</p>
+													<script src="https://gist.github.com/AndriusTheStudent/3c81679a069d52a03d8394bc7a3d27b1.js"></script>
+													
+													<p>Add new Property Address split values to NashvilleHousing table</p>
+													<script src="https://gist.github.com/AndriusTheStudent/15068dce773888f0b83cb47534128f67.js"></script>
+
+													<p>Alternative method to split string values using PARSENAME and REPLACE functions. Somewhat creative but simpler than above method.</p>
+													<script src="https://gist.github.com/AndriusTheStudent/7dcf8ab0dcae013f5b3bed2f93491e88.js"></script>
+
+													<p>Change single character values "Y" and "N" to "Yes" and "No" based on condition using CASE clause</p>
+													<script src="https://gist.github.com/AndriusTheStudent/c968a9fb8e5a5b8b86ada2fdc09ccd7d.js"></script>
+
+													<p>Remove dublicate records from Nashville table. Use Common Table Expression (CTE) to pre-render table records.</p>
+													<script src="https://gist.github.com/AndriusTheStudent/f22138e617c3f48af92100afc9d3b7bb.js"></script>
+
+													<p>DELETE dublicate records and unused columns from NashvilleHousing table</p>
+													<script src="https://gist.github.com/AndriusTheStudent/9ec6e112c91382efae16c90bd7ebb54d.js"></script>
+
+												
 												</section>
 									</section>
 
