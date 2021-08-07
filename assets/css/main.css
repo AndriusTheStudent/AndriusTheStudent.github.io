@@ -2390,6 +2390,7 @@ ul.social li a.fa-google-plus:hover {
 
 #main {
   position: relative;
+  margin-top: 1em;
   background: #f7f7f7 url("images/bg02.png");
   padding: 4em 0 4em 0;
 }
